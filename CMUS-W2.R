@@ -74,7 +74,8 @@ palem <- select(palem_w2, id) %>%                                # The pipe oper
   left_join(palem_w1, by = "id") %>%                             # "left_join" help merge two datasets that share one common variable - here id.
   left_join(palem_w2, by = "id", 
             suffix = c("_w1", "_w2")) %>%                        # "suffix" makes sure that identical column names in both databases will be differentiated after merging.
-  ### >>> Assignment 1 : PLEASE ADD A LINE TO JOIN panel_typo HERE ----
+  ### >>> Assignment 1 : ADD A LINE TO JOIN panel_typo ----
+  # HERE 
   left_join("ADD CODE HERE") %>%
   select(id,                                                     # From here we start picking relevant columns.
          Q4a_1, Q4_1_1_R, Q4_1_2_R, Q10_9_R, Q10_1_R:Q10_8_R,    # 1) Mobility equipment.
@@ -468,8 +469,8 @@ as_tibble(mca$var$v.contrib, rownames = "variables") %>%          # We get the "
   arrange(-dim.1) %>%                                             # "arrange" lets us sort the contribution from the highest to the lowest.
   filter(dim.1 > 100 / (nrow(mca$var$v.contrib)))                 # We only want to consider the dimensions whose contribution is higher than the mean contribution.
                                                                   # Dimension 1 is related to frequency of journeys/trips and use of transport modes (car/bike).
-### >>> Assignment 3 : PLEASE DESCRIBE WHAT DIMENSION 2 IS ----
-# RELATED TO.
+### >>> Assignment 3 : DESCRIBE WHAT DIMENSION 2 IS RELATED ----
+# TO.
 as_tibble("ADD CODE HERE")                                        # Dimension 2 is related to ...
 
 as_tibble(mca$var$v.contrib, rownames = "variables") %>%          # Dimension 3 is related to general eating/drinking practices and home heating.
@@ -536,8 +537,8 @@ as_tibble(mca$var$coord, rownames = "categories") %>%             # We get the "
     y = paste0("+ Urban // Rural + \n (", round(
       mca$eig$mrate[3], 1), "% var. ex.)"))
 
-### >>> Assignment 4 : PLEASE DESCRIBE AND NAME DIMENSION 2 ----
-# BY DOING THE SAME EXERCISE WITH A PLANE MADE OF DIMENSIONS 1 
+### >>> Assignment 4 : DESCRIBE AND NAME DIMENSION 2 BY ----
+# DOING THE SAME EXERCISE WITH A PLANE MADE OF DIMENSIONS 1 
 # and 2.
 as_tibble("ADD CODE HERE")
 
