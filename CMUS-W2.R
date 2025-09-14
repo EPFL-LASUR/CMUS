@@ -10,9 +10,9 @@
 ## ... 1 : Load libraries ------------------------------------------------------
 
 install.packages("dplyr", "tidyr", "opalr", "summarytools",
-                "haven", "forcats", "labelled", "stringr",
-                "GDAtools", "ggplot2", "ggrepel", "cluster",
-                "janitor", "rgl")
+                 "haven", "forcats", "labelled", "stringr",
+                 "GDAtools", "ggplot2", "ggrepel", "cluster",
+                 "janitor", "rgl")
 
 library(dplyr)                                                   # Base R.
 library(tidyr)                                                   # Base R.
@@ -74,7 +74,8 @@ palem <- select(palem_w2, id) %>%                                # The pipe oper
   left_join(palem_w1, by = "id") %>%                             # "left_join" help merge two datasets that share one common variable - here id.
   left_join(palem_w2, by = "id", 
             suffix = c("_w1", "_w2")) %>%                        # "suffix" makes sure that identical column names in both databases will be differentiated after merging.
-  # >>> PLEASE ADD A LINE TO JOIN panel_typo HERE <<<
+  ### >>> Assignment 1 : PLEASE ADD A LINE TO JOIN panel_typo HERE ----
+  left_join("ADD CODE HERE") %>%
   select(id,                                                     # From here we start picking relevant columns.
          Q4a_1, Q4_1_1_R, Q4_1_2_R, Q10_9_R, Q10_1_R:Q10_8_R,    # 1) Mobility equipment.
          Q33_1, Q33_3:Q33_5,                                     # 2) Mobility practices.
@@ -267,10 +268,11 @@ palem_mca <- palem %>%
                  "201€ to 300€" = 5, "301€ to 400€" = 6, 
                  "400€ or more" = 7), 
       label = "Price of new products"),
-    # ADD A FEW LINES HERE TO CREATE A CATEGORICAL VARIABLE
-    # ABOUT THE NUMBER OF COFFEES INDIVIDUALS DRINK EACH
-    # WEEK. WE WANT THE FOLLOWING CATEGORIES : "none",
-    # "1 to 5", "6 to 10", "11 to 20", "21 or more".
+    ### >>> Assignment 2 : ADD A FEW LINES HERE TO CREATE A ----
+    # CATEGORICAL VARIABLE ABOUT THE NUMBER OF COFFEES 
+    # INDIVIDUALS DRINK EACH WEEK. WE WANT THE FOLLOWING 
+    # CATEGORIES : "none", "1 to 5", "6 to 10", "11 to 20", 
+    # "21 or more".
     alim_dri_cof = case_when("ADD CODE HERE"),                    # How many coffees individuals drink each week ?
     alim_dri_cof = labelled("ADD CODE HERE"),
     alim_dri_alt =                                                # How many drinks with alternative milks individuals drink each week ?
@@ -466,7 +468,8 @@ as_tibble(mca$var$v.contrib, rownames = "variables") %>%          # We get the "
   arrange(-dim.1) %>%                                             # "arrange" lets us sort the contribution from the highest to the lowest.
   filter(dim.1 > 100 / (nrow(mca$var$v.contrib)))                 # We only want to consider the dimensions whose contribution is higher than the mean contribution.
                                                                   # Dimension 1 is related to frequency of journeys/trips and use of transport modes (car/bike).
-# PLEASE DESCRIBE WHAT DIMENSION 2 IS RELATED TO.
+### >>> Assignment 3 : PLEASE DESCRIBE WHAT DIMENSION 2 IS ----
+# RELATED TO.
 as_tibble("ADD CODE HERE")                                        # Dimension 2 is related to ...
 
 as_tibble(mca$var$v.contrib, rownames = "variables") %>%          # Dimension 3 is related to general eating/drinking practices and home heating.
@@ -531,10 +534,11 @@ as_tibble(mca$var$coord, rownames = "categories") %>%             # We get the "
       "+ Privation // Abundance + \n (", round(                   # "round" otherwise the number of digits will be too high.
         mca$eig$mrate[1], 1), "% var. ex.)"),                     # Retrieve the eigenvalue of dimension 1 from the mca object.
     y = paste0("+ Urban // Rural + \n (", round(
-      mca$eig$mrate[2], 1), "% var. ex.)"))
+      mca$eig$mrate[3], 1), "% var. ex.)"))
 
-# PLEASE DESCRIBE AND NAME DIMENSION 2 BY DOING THE SAME
-# EXERCISE WITH A PLANE MADE OF DIMENSIONS 1 and 2.
+### >>> Assignment 4 : PLEASE DESCRIBE AND NAME DIMENSION 2 ----
+# BY DOING THE SAME EXERCISE WITH A PLANE MADE OF DIMENSIONS 1 
+# and 2.
 as_tibble("ADD CODE HERE")
 
 
@@ -591,7 +595,7 @@ dimtypicality(                                                    # Typicality s
   dim = c(1:3))
 
 
-### ... 4 : Cluster analysis ---------------------------------------------------
+## ... 4 : Cluster analysis ---------------------------------------------------
 
 # Finally, let's perform some cluster analysis to identify 
 # ... "similar individuals" in the data.
@@ -641,4 +645,3 @@ palem_act %>% bind_cols(clust_dhc_gr) %>%                         # To do that l
   tabyl(group, genre) %>%                                         # "tabyl" lets us do a two-way table,
   adorn_totals(c("row", "col")) %>% adorn_percentages() %>%       # Cosmetics for the table.
   adorn_pct_formatting(1) %>% adorn_ns()
-
