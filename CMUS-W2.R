@@ -9,6 +9,11 @@
 
 ## ... 1 : Load libraries ------------------------------------------------------
 
+install.packages("dplyr", "tidyr", "opalr", "summarytools",
+                "haven", "forcats", "labelled", "stringr",
+                "GDAtools", "ggplot2", "ggrepel", "cluster",
+                "janitor", "rgl")
+
 library(dplyr)                                                   # Base R.
 library(tidyr)                                                   # Base R.
 library(opalr)                                                   # Get access to the data.
@@ -636,3 +641,4 @@ palem_act %>% bind_cols(clust_dhc_gr) %>%                         # To do that l
   tabyl(group, genre) %>%                                         # "tabyl" lets us do a two-way table,
   adorn_totals(c("row", "col")) %>% adorn_percentages() %>%       # Cosmetics for the table.
   adorn_pct_formatting(1) %>% adorn_ns()
+
