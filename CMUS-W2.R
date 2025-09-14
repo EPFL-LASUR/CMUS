@@ -636,5 +636,3 @@ palem_act %>% bind_cols(clust_dhc_gr) %>%                         # To do that l
   tabyl(group, genre) %>%                                         # "tabyl" lets us do a two-way table,
   adorn_totals(c("row", "col")) %>% adorn_percentages() %>%       # Cosmetics for the table.
   adorn_pct_formatting(1) %>% adorn_ns()
-
-# add another "good looking" plot in 2D? maybe with attitudes?
