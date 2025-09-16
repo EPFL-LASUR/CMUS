@@ -283,7 +283,6 @@ palem_mca <- palem %>%
       labels = c("none" = 1, "1" = 2, "2 to 4" = 3, 
                  "5 to 9" = 4, "10 or more" = 5), 
       label = "Number of alternative milk"),
-    # How many sodas individuals drink each week.
     alim_dri_soda =                                               # How many sodas individuals drink each week ?
       case_when(ali_q1_6 < 1 ~ 1, ali_q1_6 < 3 ~ 2,
                 ali_q1_6 < 6 ~ 3, ali_q1_6 < 11 ~ 4,
@@ -293,7 +292,6 @@ palem_mca <- palem %>%
       labels = c("none" = 1, "1 or 2" = 2, "3 to 5" = 3, 
                  "6 to 10" = 4, "11 or more" = 5), 
       label = "Number of sodas"),
-    # How many glasses of alcohol individuals drink each week.
     alim_dri_alc =                                                # How many glasses of alcohol individuals drink each week ?
       case_when((ali_q1_7 + ali_q1_8 + ali_q1_9) < 1 ~ 1, 
                 (ali_q1_7 + ali_q1_8 + ali_q1_9) < 4 ~ 2,
@@ -549,7 +547,7 @@ as_tibble(mca$var$coord, rownames = "categories") %>%             # We get the "
              dim5_contrib = `dim.5`)) %>%
   mutate(sig = dim1_contrib > 100 / nrow(mca$var$contrib),        # We create a new variable assessing whether the contribution of the category is significant FOR DIMENSION 1. 
          facet = "dim1") %>%                                      # ... and we create another new variable to let us remember that the above operation is only relevant for dimension 1.
-  bind_rows(                                                      # "bind_rows" is similar to "bind_cols" but for rows - we want to do the exact same operations as before but for dimension 2, and we need to make sure that the exact same columns are present.
+  bind_rows(                                                      # "bind_rows" is similar to "bind_cols" but for rows - we want to do the exact same operations as before but for dimension 3, and we need to make sure that the exact same columns are present.
     as_tibble(mca$var$coord, rownames = "categories") %>%
       rename(dim1_coord = `dim.1`, dim2_coord = `dim.2`, 
              dim3_coord = `dim.3`, dim4_coord = `dim.4`, 
@@ -563,11 +561,11 @@ as_tibble(mca$var$coord, rownames = "categories") %>%             # We get the "
       mutate(sig = dim3_contrib > 100 / nrow(mca$var$contrib),    # Note here we are doing the same for DIMENSION 3.
              facet = "dim3")) %>% 
   ggplot(                                                         # "ggplot" is the package for plotting the results - it always start like this, but from now on we will use "+" and not "%>%" anymore because we will be adding layers rather than "piping" operations.
-    aes(x = dim1_coord, y = dim3_coord)) +                        # "aes()" lets us specify what are the variables to be plotted - here we want a scatter plot of each category with both their coordinates on dimension 1 and 2.
+    aes(x = dim1_coord, y = dim3_coord)) +                        # "aes()" lets us specify what are the variables to be plotted - here we want a scatter plot of each category with both their coordinates on dimension 1 and 3.
   geom_hline(yintercept = 0, linetype = "dashed", alpha = 0.50) + # We draw straight lines to mark both axes 0 coordinate.
   geom_vline(xintercept = 0, linetype = "dashed", alpha = 0.50) +
   geom_label_repel(                                               # "geom_label_repel" is a way to label points when there is a lot of information on the same graph - otherwise "geom_label" would have worked too.
-    aes(label = if_else(sig == T, categories, NA)),               # Here we only label our categories if (and only if) there are significant on dimension 1 and 2 (see facet later).  
+    aes(label = if_else(sig == T, categories, NA)),               # Here we only label our categories if (and only if) there are significant on dimension 1 and 3 (see facet later).  
     fontface = "bold", size = 2, segment.size = 0.2,              # This is purely visual - you can play with these parameters. 
     min.segment.length = 0,  segment.linetype = 2, 
     box.padding = 0.25, force = 20) +
@@ -695,3 +693,4 @@ palem_act %>% bind_cols(clust_dhc_gr) %>%                         # To do that l
   tabyl(group, genre) %>%                                         # "tabyl" lets us do a two-way table,
   adorn_totals(c("row", "col")) %>% adorn_percentages() %>%       # Cosmetics for the table.
   adorn_pct_formatting(1) %>% adorn_ns()
+
