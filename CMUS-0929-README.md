@@ -18,7 +18,7 @@ We use the same data as Week 2 - PaLem Wave 1 includes questions about how (in)c
 You can reuse the token you have created for Week 2 - please think about disconnecting from OPAL after loading the data.
 
 # 3. Information about the data used
-Because SEM typically functions with continuous or dummy variables (rather than categorical, contrary to MCA), here is a reminder about how some of the variables are coded:
+Because SEM typically functions with continuous or dummy variables (rather than categorical ones, unlike MCA), here is a reminder about how some of the variables are coded:
 * Gender identities : 1 = man, 2 = woman (considered as a dummy).
 * Level of education : the higher the value the higher the education level.
 * Income : the higher the value the higher the income.
@@ -36,6 +36,5 @@ What are the (multiple) dispositions that could explain such correlations?
 Based on the simple SEM and CFA examples discussed in class, you can now try to scale up the model and include more information contained in the data. You can also try different specification to uncover the gendered dimension(s) of the results.
 ### Assessment 2 - Compute a CFA for the indicators related to the disposition for environmental care(lessness)
 Chose one specification that sounds theoretically and statistically appealing to you. Then name each latent variable (disposition) according to the indicators it is tied to (considering the positive/negative signs of the factor loadings).
-### Assessment 3 - Build a SEM integrating the dispositions you have identified, estimate the results and describe them in a the perspective of sustainable urban (transport) policies
-...
-
+### Assessment 3 - Build a SEM integrating the dispositions you have identified
+Estimate the results from your model specification and describe the results, first with a statistical point of view, and then in the perspective of urban policies recommendations.
