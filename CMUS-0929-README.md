@@ -1,6 +1,6 @@
 # 1. Introduction
 Today's R session uses Structural Equation Modeling (SEM) and latent variables to get access to the Panel Lémanique respondents' social dispositions and habitus. More specifically, we are interested in the mental grid/network of dispositions composing the habitus and related to: 
-1) relationship with space,
+1) spatial environment,
 2) environmental care(lessness),
 3) transport modes.
 
