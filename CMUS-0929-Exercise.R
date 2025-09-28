@@ -61,9 +61,9 @@ palem <- select(palem_w2, id) %>%                                # The pipe oper
             suffix = c("_w1", "_w2")) %>%                        # "suffix" makes sure that identical column names in both databases will be differentiated after merging.
   left_join(palem_typo, by = "id") %>%
   select(id,                                                     # From here we start picking relevant columns.
-         Q94_1:Q95_4,                                            # 1) Dispositions towards orientation & space.
+         Q94_1:Q95_4,                                            # 1) Sense of direction & spatial preferences.
          Q101_1:Q104_5,                                          # 2) Transport modes (in)conveniences.
-         rep_q2:rep_q21,                                         # 3) Environmental care.
+         rep_q2:rep_q21,                                         # 3) Environmental care(lessness).
          genre, Q109, Q110, Q120, Q121, typo)                    # 4) Additional sociological and spatial information.
 
 palem_sem <- palem %>% filter(genre %in% c(1, 2)) %>%            # Because our models will compare male- and female-identifying individuals, we only keep these answers.
@@ -237,4 +237,5 @@ semPaths(fit)
 
 modindices(fit, sort = TRUE, maximum.number = 30)                 # modindices() let you know what relationships (=~, ~, or ~~) you could add in order to improve the statistical power of your model.
                                                                   # NOTE THAT this should be used with parcimony and ONLY when the relationships make sense from a theoretical standpoint.
+
 
