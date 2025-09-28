@@ -9,6 +9,10 @@
 
 ## ... 1 : Load libraries ------------------------------------------------------
 
+install.packages("corrplot")
+install.packages("lavaan")
+install.packages("semPlot")
+
 library(dplyr)                                                   # Base R.
 library(tidyr)                                                   # Base R.
 library(opalr)                                                   # Get access to the data.
@@ -233,3 +237,4 @@ semPaths(fit)
 
 modindices(fit, sort = TRUE, maximum.number = 30)                 # modindices() let you know what relationships (=~, ~, or ~~) you could add in order to improve the statistical power of your model.
                                                                   # NOTE THAT this should be used with parcimony and ONLY when the relationships make sense from a theoretical standpoint.
+
