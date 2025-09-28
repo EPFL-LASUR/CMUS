@@ -183,7 +183,7 @@ fit <- sem(model_ex, data = palem_sem_cont)                       # sem(), provi
 
 summary(fit, standardized = T, fit.measures = T)                  # summary produces a summary of the model estimates and quality.
 
-semPaths(fit, what = "std", style = "lisrel", layout = "tree",    # semPaths is a quick way of plotting the model and exploring the results when it's not too complicated.
+semPaths(fit, what = "std", style = "lisrel", layout = "spring",   # semPaths is a quick way of plotting the model and exploring the results when it's not too complicated.
          rotation = 1, layoutSplit = T)
 
 
@@ -237,5 +237,6 @@ semPaths(fit)
 
 modindices(fit, sort = TRUE, maximum.number = 30)                 # modindices() let you know what relationships (=~, ~, or ~~) you could add in order to improve the statistical power of your model.
                                                                   # NOTE THAT this should be used with parcimony and ONLY when the relationships make sense from a theoretical standpoint.
+
 
 
