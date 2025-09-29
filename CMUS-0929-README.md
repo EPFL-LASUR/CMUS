@@ -121,6 +121,66 @@ Please indicate your level of agreement with the following statements. – I am 
 * Q95_4
 Please indicate your level of agreement with the following statements. – In general, I try to look for new places and activities that I can do in my city/region
 
+* Q101_1
+Think about the types of trips you regularly make in your area. For you, how well are public transport services suited for the following type of trip? – Grocery shopping at a supermarket
+
+* Q101_2
+Think about the types of trips you regularly make in your area. For you, how well are public transport services suited for the following type of trip? – Shopping at small businesses, grocery stores, markets, etc.
+
+* Q101_3
+Think about the types of trips you regularly make in your area. For you, how well are public transport services suited for the following type of trip? – Administrative or medical errands (post office, bank, medical care, etc.)
+
+* Q101_4
+Think about the types of trips you regularly make in your area. For you, how well are public transport services suited for the following type of trip? – Artistic, cultural, community, or intellectual activity (cinema, theater, classes, etc.)
+
+* Q101_5
+Think about the types of trips you regularly make in your area. For you, how well are public transport services suited for the following type of trip? – Evening social activity (bar, restaurant, nightclub, etc.)
+
+* Q102_1
+Think about the types of trips you regularly make in your area. For you, how well is the car suited for the following type of trip? – Grocery shopping at a supermarket
+
+* Q102_2
+Think about the types of trips you regularly make in your area. For you, how well is the car suited for the following type of trip? – Shopping at small businesses, grocery stores, markets, etc.
+
+* Q102_3
+Think about the types of trips you regularly make in your area. For you, how well is the car suited for the following type of trip? – Administrative or medical errands (post office, bank, medical care, etc.)
+
+* Q102_4
+Think about the types of trips you regularly make in your area. For you, how well is the car suited for the following type of trip? – Artistic, cultural, community, or intellectual activity (cinema, theater, classes, etc.)
+
+* Q102_5
+Think about the types of trips you regularly make in your area. For you, how well is the car suited for the following type of trip? – Evening social activity (bar, restaurant, nightclub, etc.)
+
+* Q103_1
+Think about the types of trips you regularly make in your area. For you, how well is cycling (conventional or electric bike) suited for the following type of trip? – Grocery shopping at a supermarket
+
+* Q103_2
+Think about the types of trips you regularly make in your area. For you, how well is cycling (conventional or electric bike) suited for the following type of trip? – Shopping at small businesses, grocery stores, markets, etc.
+
+* Q103_3
+Think about the types of trips you regularly make in your area. For you, how well is cycling (conventional or electric bike) suited for the following type of trip? – Administrative or medical errands (post office, bank, medical care, etc.)
+
+* Q103_4
+Think about the types of trips you regularly make in your area. For you, how well is cycling (conventional or electric bike) suited for the following type of trip? – Artistic, cultural, community, or intellectual activity (cinema, theater, classes, etc.)
+
+* Q103_5
+Think about the types of trips you regularly make in your area. For you, how well is cycling (conventional or electric bike) suited for the following type of trip? – Evening social activity (bar, restaurant, nightclub, etc.)
+
+414 – Q104_1
+Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Grocery shopping at a supermarket
+
+415 – Q104_2
+Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Shopping at small businesses, grocery stores, markets, etc.
+
+416 – Q104_3
+Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Administrative or medical errands (post office, bank, medical care, etc.)
+
+417 – Q104_4
+Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Artistic, cultural, community, or intellectual activity (cinema, theater, classes, etc.)
+
+418 – Q104_5
+Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Evening social activity (bar, restaurant, nightclub, etc.)
+
 # 4. Getting familiar with the data (correlation matrices and plots)
 ### Assessment 1 - Compute and comment correlation plots for indicators related to environmental care(lessness)
 What are the relationships you observe between "rep_q..." questions, which are related to enviromnetal care(lessness)?
