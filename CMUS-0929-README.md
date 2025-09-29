@@ -166,19 +166,19 @@ Think about the types of trips you regularly make in your area. For you, how wel
 * Q103_5
 Think about the types of trips you regularly make in your area. For you, how well is cycling (conventional or electric bike) suited for the following type of trip? – Evening social activity (bar, restaurant, nightclub, etc.)
 
-414 – Q104_1
+* Q104_1
 Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Grocery shopping at a supermarket
 
-415 – Q104_2
+* Q104_2
 Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Shopping at small businesses, grocery stores, markets, etc.
 
-416 – Q104_3
+* Q104_3
 Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Administrative or medical errands (post office, bank, medical care, etc.)
 
-417 – Q104_4
+* Q104_4
 Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Artistic, cultural, community, or intellectual activity (cinema, theater, classes, etc.)
 
-418 – Q104_5
+* Q104_5
 Think about the types of trips you regularly make in your area. For you, how well is walking suited for the following type of trip? – Evening social activity (bar, restaurant, nightclub, etc.)
 
 # 4. Getting familiar with the data (correlation matrices and plots)
