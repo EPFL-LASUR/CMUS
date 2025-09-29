@@ -27,6 +27,100 @@ Because SEM typically functions with continuous or dummy variables (rather than 
 * Knowledge about residential surroundings (Q95) : the higher the value the more familiar people are with their surroundings.
 * Environmental care(lessness) : you will have to do the job here!
 
+For non-French speakers, here's a translation of the questions used today:
+* rep_q2
+When it comes to the environment, my relatives usually behave …
+
+* rep_q3
+When it comes to the environment, my relatives expect me to behave …
+
+* rep_q4
+The media (news, reports, on television, in newspapers, on the internet, etc.) ______ me to behave in an environmentally friendly way.
+
+* rep_q5
+If I want to behave in an environmentally friendly way, …
+
+* rep_q6
+For someone like me, behaving in an environmentally friendly way is …
+
+* rep_q7
+If I am asked to pay higher prices for goods and services in order to help protect the environment, I would be …
+
+* rep_q8
+When I behave in an environmentally friendly way, I feel …
+
+* rep_q9
+I believe that my behavior can have a positive impact ______ on the environment.
+
+* rep_q10
+Environmental concerns have a ______ place in my consumer and purchasing choices.
+
+* rep_q11
+For me, protecting the environment is …
+
+* rep_q12
+If we continue like this, we are heading towards …
+
+* rep_q13
+I think that many environmentalists present environmental problems in a … way.
+
+* rep_q14
+In today’s environmental context, we should all ______ our standard of living.
+
+* rep_q15
+Politicians are doing ______ to protect the environment.
+
+* rep_q20_1
+How responsible are the following actors for protecting the environment and preventing harmful behaviors towards it? – Politicians
+
+* rep_q20_2
+How responsible are the following actors for protecting the environment and preventing harmful behaviors towards it? – Citizens
+
+* rep_q20_3
+How responsible are the following actors for protecting the environment and preventing harmful behaviors towards it? – Other actors (industry, businesses, etc.)
+
+* rep_q16
+Please indicate your level of agreement with the following statement. It is justified not to worry about the environment because there are more important things in life.
+
+* rep_q17
+The impact of one person’s behavior is small, which is why it is pointless to restrict oneself for the environment.
+
+* rep_q18
+In general, I behave in a very environmentally friendly way, so it is acceptable if I do not care about the environment in some behaviors (e.g., if I go on vacation by plane).
+
+* rep_q19
+Environmentally friendly behavior often costs more than unfriendly behavior, so sometimes I act in an environmentally unfriendly way (e.g., going on vacation by plane instead of paying more to travel in a more environmentally friendly way).
+
+* rep_q21
+People who accuse others of negative environmental behaviors usually do no better than others.
+
+* Q94_1
+In unfamiliar places, how comfortable are you at finding your way using the following means? – A route planner (smartphone / GPS)
+
+* Q94_2
+In unfamiliar places, how comfortable are you at finding your way using the following means? – A map / a public transport map
+
+* Q94_3
+In unfamiliar places, how comfortable are you at finding your way using the following means? – Street numbers / road signs
+
+* Q94_4
+In unfamiliar places, how comfortable are you at finding your way using the following means? – An unfamiliar person (asking someone you don’t know)
+
+* Q94_5
+In unfamiliar places, how comfortable are you at finding your way using the following means? – A familiar person (asking someone you know)
+
+* Q95_1
+Please indicate your level of agreement with the following statements. – If disruptions occur before my departure, I am able to change my route or mode of transport without difficulty
+
+* Q95_2
+Please indicate your level of agreement with the following statements. – If I have a choice, I prefer my leisure activities to be close to my home
+
+* Q95_3
+Please indicate your level of agreement with the following statements. – I am aware of the leisure activities available around my home (restaurants, shops, sports, etc.)
+
+* Q95_4
+Please indicate your level of agreement with the following statements. – In general, I try to look for new places and activities that I can do in my city/region
+
 # 4. Getting familiar with the data (correlation matrices and plots)
 ### Assessment 1 - Compute and comment correlation plots for indicators related to environmental care(lessness)
 What are the relationships you observe between "rep_q..." questions, which are related to enviromnetal care(lessness)?
