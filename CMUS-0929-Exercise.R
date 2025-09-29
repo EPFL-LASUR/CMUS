@@ -48,7 +48,7 @@ dico_w2 <- as_tibble((
 # >>>>>>>>>>                  loading data !                       <<<<<<<<<<<<<
 opal.logout(o)
 
-palem_typo <- as_tibble(                                         # Complementary house spatial typology.
+palem_typo <- as_tibble(                                         # Complementary home made spatial typology.
   read.csv2("EPFL_vague1_typo-territoire.csv")) %>%              # The path to the file (from your wd)
   rename(id = IDNO, typo = dom_Typo_panel)                       # "rename" help us change names of columns.
 
@@ -237,6 +237,7 @@ semPaths(fit)
 
 modindices(fit, sort = TRUE, maximum.number = 30)                 # modindices() let you know what relationships (=~, ~, or ~~) you could add in order to improve the statistical power of your model.
                                                                   # NOTE THAT this should be used with parcimony and ONLY when the relationships make sense from a theoretical standpoint.
+
 
 
 
