@@ -40,6 +40,8 @@ This process will be demonstrated in class. Remember the following steps:
 Also note that the provided loop only scrapes the five oldest ballots for demonstration purposes.
 You can increase this number up to n_ballot (currently 499), but be aware that this may require a significant amount of computational time.
 
+You can find information about all national ballots here: https://swissvotes.ch/votes?page=0
+
 # 2.2 The Swiss Political Landscape and Principal Component Analysis (PCA)
 
 PCA is another form of Geometric Data Analysis (GDA) (see Week 2) but is used for continuous variables.
