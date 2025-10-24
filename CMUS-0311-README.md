@@ -9,4 +9,11 @@ If you wish to dive deeper into spatial data science in R, here are two excellen
 # 2. Data
 Switzerland has excellent open data in general, and geodata is no exception. See for example:  
 [Swiss administrative boundaries](https://www.swisstopo.admin.ch/en/landscape-model-swissboundaries3d#swissBOUNDARIES3D---Download)  
-Make sure to download the .shp format
+Make sure to download the Shapefile (.shp) format  
+Also download a subset of the Panel Lémanique GPS tracking dataset (scan QR code)  
+More info on this dataset (in french) [here](https://assets.super.so/15749c3c-d748-4e49-bff7-6fc9ec745dc4/files/087cfa6f-fdb6-475b-aa92-6bf78a3c58e7/240820_rapport_GPS_panel_lemanique.pdf)
+
+#3. IMPORTANT!!! COORDINATE REFERENCE SYSTEMS (CRS)
+Before we do anything geospatial, we have to understand [Coordinate Reference Systems](https://earthdatascience.org/courses/earth-analytics/spatial-data-r/intro-to-coordinate-reference-systems/)
+
+#4. You should be good to go with the CMUS-0311-Exercise - have fun!
