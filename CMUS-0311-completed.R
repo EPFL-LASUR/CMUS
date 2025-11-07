@@ -8,6 +8,7 @@ library(lwgeom)
 ab_path <- "/Users/Downloads/swissboundaries3d_2025-01_2056_5728/swissBOUNDARIES3D_1_5_TLM_HOHEITSGEBIET.shp"
 ab <- st_read(ab_path)%>% st_zm()
 glimpse(ab)
+ab%>%st_crs()
 #map the municipalities boundaries to get a sense of what the dataset looks like
 ggplot(data = ab) + geom_sf(aes(fill = EINWOHNERZ)) + scale_fill_viridis_c(trans = scales::pseudo_log_trans(sigma = 0.001))
 
@@ -56,3 +57,4 @@ orig_ab <- st_join(st_sf(origins),ab_clean,join = st_intersects)
 dest_ab <- st_join(st_sf(destinations),ab_clean,join = st_intersects)
 orig_ab %>% as.data.frame() %>%group_by(NAME) %>% summarise(Num_trips = n()) %>% arrange(-Num_trips)
 dest_ab %>% as.data.frame() %>%group_by(NAME) %>% summarise(Num_trips = n()) %>% arrange(-Num_trips)
+
