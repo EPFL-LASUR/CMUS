@@ -51,13 +51,13 @@ mean_distance(g)
 # Create a Barabasi-Albert scale-free network (for example, the World Wide Web)
 g <- sample_pa(200, power = 1, m = 1, directed = FALSE)
 # Customize the graph appearance and visualize node degree and edge betweenness
-V(g)$size <- degree(g) # Vertex size based on degree
-V(g)$color <- rainbow(100)[cut(degree(g), breaks = 100)] # Vertex color based on degree
-E(g)$width <- edge_betweenness(g) * 0.001 # Edge width based on betweenness
-plot(g,
+V(gfb)$size <- 0.05*degree(gfb) # Vertex size based on degree
+V(gfb)$color <- rainbow(100)[cut(degree(gfb), breaks = 100)] # Vertex color based on degree
+E(gfb)$width <- edge_betweenness(gfb) * 0.00001 # Edge width based on betweenness
+plot(gfb,
      vertex.label = NA, # Remove vertex labels
      edge.curved = 0.1, # Add curve to edges
-     layout = layout_with_fr(g))
+     layout = layout_with_fr(gfb))
 
 # Create and visualize a weighted graph (for example, the strength of relationships)
 edges <- data.frame(

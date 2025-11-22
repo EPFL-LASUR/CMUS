@@ -13,7 +13,7 @@ ab%>%st_crs()
 ggplot(data = ab) + geom_sf(aes(fill = EINWOHNERZ)) + scale_fill_viridis_c(trans = scales::pseudo_log_trans(sigma = 0.001))
 
 #load the panel lémanique GPS tracks data that you just downloaded
-gps_path <- "/Users/Documents/GPS_data/CMUS_GPS_data.shp"
+gps_path <- "/Users/aquicoop/Documents/GPS_data/CMUS_GPS_data.shp"
 gps <- st_read(gps_path)
 glimpse(gps)
 #map the GPS tracks to get a sense of the geographical extent of the dataset

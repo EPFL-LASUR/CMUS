@@ -18,5 +18,5 @@ Go ahead and apply the same methods on your real-world network as with the above
 - Degree distribution
 - Edge betweenness 
 - Community detection 
-- Plotting/visualization 
+- Plotting/visualization  
 BONUS QUESTION: what kind of network does your real world network look like?

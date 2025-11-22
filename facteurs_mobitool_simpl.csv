@@ -1,0 +1,15 @@
+mode,gCO2pkm
+Mode::Walk,0
+Mode::Car,186.4
+Mode::Bus,85.2
+Mode::Bicycle,5.6
+Mode::LightRail,8.2
+Mode::Train,6.8
+Mode::Subway,8.2
+Mode::Ebicycle,9.8
+Mode::Ecar,89.8
+Mode::Motorbike,163.6
+Mode::RegionalTrain,8
+Mode::Carsharing,129.7
+Mode::Tram,42.8
+Mode::Plane,263
